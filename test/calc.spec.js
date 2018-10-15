@@ -4,7 +4,7 @@ import chai from 'chai';
 
 describe('Testing sum', () => {
 
-	it('should return sum of "a" and "b"', () => {
+    it('should return sum of "a" and "b"', () => {
 		const result = Calculate.sum(10, 23);
 		chai.expect(result).to.equal(33);
 	});
