@@ -5,8 +5,8 @@ import chai from 'chai';
 describe('Testing sum', () => {
 
     it('should return sum of "a" and "b"', () => {
-		const result = Calculate.sum(10, 23);
-		chai.expect(result).to.equal(33);
+		const result = Calculate.sum(10.34, 23.6);
+		chai.expect(result).to.equal(33.94);
 	});
 
     it('should return sum of "a" and "b" with negative number', () => {
@@ -40,8 +40,8 @@ describe('Testing sub', () => {
     });
 
     it('should return sub of "a" and "b" with negative number', () => {
-        const result = Calculate.sub(100, -130);
-        chai.expect(result).to.equal(230);
+        const result = Calculate.sub(100.32, -130.76);
+        chai.expect(result).to.equal(100.32 + 130.76);
     });
 
     it('should be thrown exception (first arg = Infinity)', () => {
@@ -69,8 +69,8 @@ describe('Testing mul', () => {
     });
 
     it('should return mul of "a" and "b" with negative number', () => {
-        const result = Calculate.mul(13, -3);
-        chai.expect(result).to.equal(-39);
+        const result = Calculate.mul(13, -3.5);
+        chai.expect(result).to.equal(-45.5);
     });
 
     it('should be thrown exception (first arg = Infinity)', () => {
@@ -98,8 +98,8 @@ describe('Testing div', () => {
     });
 
     it('should return div of "a" and "b" with negative number', () => {
-        const result = Calculate.div(-56, -8);
-        chai.expect(result).to.equal(7);
+        const result = Calculate.div(-56.7, -8.1);
+        chai.expect(result).to.equal(-56.7 / -8.1);
     });
 
     it('should return Infinity', () => {

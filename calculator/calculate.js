@@ -5,7 +5,7 @@ export default class Calculate {
         if (!isNumeric(a)) {
             throw 'first arg is not number';
         } else if (!isNumeric(b)) {
-            throw 'first arg is not number';
+            throw 'second arg is not number';
         }
         return a + b;
     }
@@ -13,7 +13,7 @@ export default class Calculate {
         if (!isNumeric(a)) {
             throw 'first arg is not number';
         } else if (!isNumeric(b)) {
-            throw 'first arg is not number';
+            throw 'second arg is not number';
         }
         return a - b;
     }
@@ -21,7 +21,7 @@ export default class Calculate {
         if (!isNumeric(a)) {
             throw 'first arg is not number';
         } else if (!isNumeric(b)) {
-            throw 'first arg is not number';
+            throw 'second arg is not number';
         }
         return a / b;
     }
@@ -29,7 +29,7 @@ export default class Calculate {
         if (!isNumeric(a)) {
             throw 'first arg is not number';
         } else if (!isNumeric(b)) {
-            throw 'first arg is not number';
+            throw 'second arg is not number';
         }
         return a * b;
     }
