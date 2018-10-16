@@ -1,36 +1,23 @@
-import {isNumeric} from '../utils/isNumeric.js';
+import {check} from "../utils/check";
 
 export default class Calculate {
     static sum (a, b) {
-        if (!isNumeric(a)) {
-            throw 'first arg is not number';
-        } else if (!isNumeric(b)) {
-            throw 'second arg is not number';
-        }
+        check(a, b);
         return a + b;
     }
     static sub (a, b) {
-        if (!isNumeric(a)) {
-            throw 'first arg is not number';
-        } else if (!isNumeric(b)) {
-            throw 'second arg is not number';
-        }
+        check(a, b);
         return a - b;
     }
     static div (a, b) {
-        if (!isNumeric(a)) {
-            throw 'first arg is not number';
-        } else if (!isNumeric(b)) {
-            throw 'second arg is not number';
+        check(a, b);
+        if (b === 0) {
+            throw 'division by zero';
         }
         return a / b;
     }
     static mul (a, b) {
-        if (!isNumeric(a)) {
-            throw 'first arg is not number';
-        } else if (!isNumeric(b)) {
-            throw 'second arg is not number';
-        }
+        check(a, b);
         return a * b;
     }
 
